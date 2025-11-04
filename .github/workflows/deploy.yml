@@ -11,8 +11,8 @@ jobs:
         - name: Deploy
           uses: appleboy/ssh-action@v0.1.8
           with:
-              host: ${{secrets.IP}}
-              port: 2222
-              username: annxt
-              key: ${{secrets.PRIVATE_KEY}}
-              script: "cd /var/www/html/reddit; git pull origin main; npm run build"
+            host: ${{secrets.IP}}
+            port: 2222
+            username: annxt
+            key: ${{secrets.PRIVATE_KEY}}
+            script: "cd /var/www/html/reddit; git pull origin main; npm run build"
