@@ -3,5 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+
+dd(opcache_get_status());
+
+return view('welcome');
+
 });
+
